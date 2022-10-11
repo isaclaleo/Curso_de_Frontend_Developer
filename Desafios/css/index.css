@@ -1,0 +1,21 @@
+*{
+    background-color: peachpuff;
+}
+.card {
+  background-color: aqua;
+}
+/*Desafío de selector de clase*/
+.card1, .card2 {
+    color: blue;
+}
+
+.eliminar {
+    background: pink;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    background: black;
+    color: azure;
+}
