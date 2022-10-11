@@ -19,3 +19,10 @@ a {
     background: black;
     color: azure;
 }
+ul > li {
+    color: blue;
+}
+
+.container p{
+    color: blueviolet;
+}
