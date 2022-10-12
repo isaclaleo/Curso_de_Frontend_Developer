@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        div{
+            background: hotpink;
+        }
+        @media (min-width: 300px){
+            div{
+                background-color: aqua;
+            }
+        }
+        @media (max-width:350px) {
+            div {
+                background: khaki;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus placeat provident nobis vitae a harum inventore laboriosam error labore recusandae, pariatur ea voluptates fugit distinctio veritatis voluptas cupiditate enim sint!
+    </div>
+    <div>
+        <div>
+            <h2>Qué son las media queries</h2>
+            <div><p>Las media queries son reglas CSS que establecen un comportamiento distinto o diferentes estilos en un cierto rango de la pantalla. Esto sirve para establecer el layout del sitio web para diferentes tipos de pantalla: escritorio, tablets y celulares.</p></div>
+            <div>
+                <ul>
+                    <li>max-width / max-height: establece un rango máximo para cierto comportamiento.</li>
+                    <li>min-width / min-height: establece un rango mínimo para cierto comportamiento.</li>
+                </ul>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
