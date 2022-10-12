@@ -26,3 +26,11 @@ ul > li {
 .container p{
     color: blueviolet;
 }
+
+div + p {
+    color: cadetblue;
+}
+
+div ~ p{
+    color: yellowgreen;
+}
