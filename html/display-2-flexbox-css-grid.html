@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de display más usados: flexbox y CSS grid</title>
+    <style>
+        /* Flexbox */
+        .container-flexbox h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            font-size: 2rem;
+            background: salmon;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            background: blue;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction:row;
+            height: auto;
+        }
+        .container h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 2rem;
+        }
+        .item {
+            background: violet;
+            width: 100px;
+            height: auto;
+            background: darkblue;
+            text-align: justify;
+            margin: 10px;
+            padding: 10px;
+        }
+        .item h2 {
+            text-align: center;
+        }
+        .item p{
+            color: aliceblue;
+            font-size: small;
+        }
+        .container .item:nth-child(2n +1){
+            background: darkorchid;
+        }
+        /* Css Grid */
+        .container-grid h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            font-size: 2rem;
+            background: salmon;
+            margin: 0;
+        }
+        .container2 {
+            display: grid;
+            width: auto;
+            height: auto;
+            background: aqua;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .item2 {
+            background: azure;
+        }
+        .container2 .item2:nth-child(1){
+            grid-column: 1 / 2;
+        }
+        .container2 .item2:nth-child(2){
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        .container2 .item2:nth-child(3){
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+        .container2 .item2:nth-child(4){
+            grid-column: 4 / 5;
+            grid-row: 4 / 5;
+        }
+        .container2 .item2 h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 2rem;
+        }
+        .item2 p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: small;
+            text-align: justify;
+            color: blue;
+            padding: 1px;
+            margin: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-flexbox">
+        <h2>Flexbox</h2>
+        <div class="container">
+            <div class="item">
+                <h2>Qué es flexbox</h2>
+            </div>
+            <div class="item">
+                <p>Flexbox consiste en el ordenamiento de elementos hijos en un solo eje, por defecto horizontalmente. El elemento padre o contenedor deberá contener la propiedad display con el valor flex. A partir de aquí, ya puedes ordenar los hijos según sea necesario.</p>
+            </div>
+            <div class="item">
+                <p>Cuando domines los temas básicos de CSS y las propiedades más usadas, revisadas en el contenido del curso, sigue con Flexbox.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Css grid-->
+    <div class="container-grid">
+        <h2>CSS Grid</h2>
+        <div class="container2">
+            <div class="item2">
+                <h2>Qué es grid</h2>
+            </div>
+            <div class="item2">
+                <p>Grid consiste en el ordenamiento de elementos hijos en dos ejes, como si fuera una cuadrícula o tabla. El elemento padre o contenedor deberá contener la propiedad display con el valor grid y debes definir las medidas de las columnas y de las filas. A partir de aquí, ya puedes ordenar los hijos según sea necesario.</p>
+            </div>
+            <div class="item2">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem reprehenderit illo tenetur laborum incidunt ut dicta similique quisquam, molestiae quam optio! Optio blanditiis laboriosam molestiae quasi nihil odio voluptatum eaque.</p>
+            </div>
+            <div class="item2">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, recusandae sequi tenetur cumque molestias natus praesentium maiores unde voluptatum quam harum minus. Impedit labore blanditiis possimus ducimus eligendi nemo inventore!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
