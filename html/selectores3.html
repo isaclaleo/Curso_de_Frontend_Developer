@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de selectores: pseudoclases y pseudoelementos</title>
+    <style>
+        p {
+            color: blue;
+        }
+        p::first-letter{
+            color: brown;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p::after{
+            content: "🤩";
+        }
+        p::before {
+            content: "🤪";
+        }
+        p:hover{
+            color: blueviolet;
+        }
+        div p:nth-child(2) {
+            color: palegreen;
+        }
+        ::placeholder{
+            color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aspernatur error nesciunt nihil delectus voluptatum consectetur atque adipisci, harum ipsa laudantium mollitia, reiciendis magni? Vero nisi molestiae illum ex nesciunt.</p>
+    <div>
+        <p>hola</p>
+        <p>isac</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim facilis reiciendis, consequuntur, sunt nostrum, omnis corrupti facere laudantium optio distinctio voluptates. Consequatur veniam laudantium tempora inventore corrupti fuga quasi mollitia?</p>
+    </div>
+    <input type="text" placeholder="Name">
+</body>
+</html>
